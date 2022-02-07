@@ -3,27 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interview", "Interview\Interview.csproj", "{0F54DC78-6975-4700-8DA9-1E21D9DE0864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPattern", "AdapterDesignPattern\AdapterDesignPattern.csproj", "{8B0A0CAA-EC88-4136-ABD4-FAF35F88AE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanairSolution", "RyanairSolution\RyanairSolution.csproj", "{A1B6FC70-9904-4970-9DC8-023930E8BFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeDesignPattern", "FacadeDesignPattern\FacadeDesignPattern.csproj", "{F621A988-DEDD-4D5C-9F59-EC6DD441B3AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDesignPattern", "AdapterDesignPattern\AdapterDesignPattern.csproj", "{8B0A0CAA-EC88-4136-ABD4-FAF35F88AE19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyDesingPattern", "StrategyDesingPattern\StrategyDesingPattern.csproj", "{1162243F-4DDF-4BD3-8B3A-803CE7B7C098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeDesignPattern", "FacadeDesignPattern\FacadeDesignPattern.csproj", "{F621A988-DEDD-4D5C-9F59-EC6DD441B3AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeDesignPattern", "CompositeDesignPattern\CompositeDesignPattern.csproj", "{AD5B61EB-2D51-4C59-9822-FFDD61BA0623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDesingPattern", "StrategyDesingPattern\StrategyDesingPattern.csproj", "{1162243F-4DDF-4BD3-8B3A-803CE7B7C098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverDesignPattern", "ObserverDesignPattern\ObserverDesignPattern.csproj", "{706398F8-5B6B-4012-889E-F5D019B507A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeDesignPattern", "CompositeDesignPattern\CompositeDesignPattern.csproj", "{AD5B61EB-2D51-4C59-9822-FFDD61BA0623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderDesignPattern", "BuilderDesignPattern\BuilderDesignPattern.csproj", "{5BF18463-DFB0-4F76-9D99-94369AAF1D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverDesignPattern", "ObserverDesignPattern\ObserverDesignPattern.csproj", "{706398F8-5B6B-4012-889E-F5D019B507A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorDesignPattern", "IteratorDesignPattern\IteratorDesignPattern.csproj", "{ABF6BF63-2B81-43F4-8933-94BD069BE201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderDesignPattern", "BuilderDesignPattern\BuilderDesignPattern.csproj", "{5BF18463-DFB0-4F76-9D99-94369AAF1D76}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorDesignPattern", "IteratorDesignPattern\IteratorDesignPattern.csproj", "{ABF6BF63-2B81-43F4-8933-94BD069BE201}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryDesignPattern", "AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj", "{84FE4D50-737B-4472-B170-B4E312B8A4ED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrinciples", "SOLIDPrinciples\SOLIDPrinciples.csproj", "{3CB13975-CBAC-4B2D-BFED-3EDDDC1A819E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryDesignPattern", "AbstractFactoryDesignPattern\AbstractFactoryDesignPattern.csproj", "{84FE4D50-737B-4472-B170-B4E312B8A4ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F54DC78-6975-4700-8DA9-1E21D9DE0864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F54DC78-6975-4700-8DA9-1E21D9DE0864}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F54DC78-6975-4700-8DA9-1E21D9DE0864}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F54DC78-6975-4700-8DA9-1E21D9DE0864}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1B6FC70-9904-4970-9DC8-023930E8BFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1B6FC70-9904-4970-9DC8-023930E8BFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1B6FC70-9904-4970-9DC8-023930E8BFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1B6FC70-9904-4970-9DC8-023930E8BFD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B0A0CAA-EC88-4136-ABD4-FAF35F88AE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B0A0CAA-EC88-4136-ABD4-FAF35F88AE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0A0CAA-EC88-4136-ABD4-FAF35F88AE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,10 +57,6 @@ Global
 		{84FE4D50-737B-4472-B170-B4E312B8A4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FE4D50-737B-4472-B170-B4E312B8A4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FE4D50-737B-4472-B170-B4E312B8A4ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CB13975-CBAC-4B2D-BFED-3EDDDC1A819E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CB13975-CBAC-4B2D-BFED-3EDDDC1A819E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CB13975-CBAC-4B2D-BFED-3EDDDC1A819E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CB13975-CBAC-4B2D-BFED-3EDDDC1A819E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

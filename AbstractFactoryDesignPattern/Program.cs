@@ -2,21 +2,6 @@
 
 namespace AbstractFactoryDesignPattern
 {
-    /* 
-     Abstract Factory Design Pattern ==> İlişkisel olan birden fazla nesnenin üretimini tek bir arayüz tarafından 
-     değil her ürün ailesi için farklı bir arayüz tanımlayarak sağlamaktadır. Birden fazla ürün ailesi ile çalışmak
-     zorunda kaldığımız durumlarda, istemciyi bu yapılardan soyutlamak için Abstract Factory D.P. doğru bir yaklaşım 
-     olacaktır.
-
-    Abstract Product ==> Üretilecek ürünlerin soyut sınıfıdır. Belirli ürünlerin içerisindeki tüm member yapılanmasını 
-    imza olarak taşımakta ve Concrete Product yapılarına implemente etmektedir.
-
-    Concrete Product ==> İstemcinin üretmek istediği ürün ailesinin gerçek somut sınıflarıdır.
-
-    Abstract Factory ==> Ürün ailesini oluşturacak olan fabrika sınıflarına arayüz sağlayan yapıdır.
-
-    Concrete Factory ==> Asıl ürün ailesini oluşturan fabrikalardır.     
-     */
 
     //Abstract Product
     abstract class Connection
@@ -38,12 +23,12 @@ namespace AbstractFactoryDesignPattern
         public override string State => "Open";
         public override bool Connect()
         {
-            Console.WriteLine("SqlConnection bağlantısı kuruluyor.");
+            Console.WriteLine("Establishing the SqlConnection connection.");
             return true;
         }
         public override bool DisConnect()
         {
-            Console.WriteLine("SqlConnection bağlantısı kesiliyor.");
+            Console.WriteLine("SqlConnection is disconnecting.");
             return false;
         }
     }
@@ -51,7 +36,7 @@ namespace AbstractFactoryDesignPattern
     //Concrete Product
     class SqlCommand : Command
     {
-        public override void Execute(string query) => Console.WriteLine("SqlCommand sorgusu çalıştırıldı.");
+        public override void Execute(string query) => Console.WriteLine("SqlCommand query executed.");
     }
 
     //Concrete Product
@@ -60,12 +45,12 @@ namespace AbstractFactoryDesignPattern
         public override string State => "Open";
         public override bool Connect()
         {
-            Console.WriteLine("MySqlConnection bağlantısı kuruluyor.");
+            Console.WriteLine("Establishing the MySqlConnection connection.");
             return true;
         }
         public override bool DisConnect()
         {
-            Console.WriteLine("MySqlConnection bağlantısı kesiliyor.");
+            Console.WriteLine("MySqlConnection is disconnecting.");
             return false;
         }
     }
@@ -73,7 +58,7 @@ namespace AbstractFactoryDesignPattern
     //Concrete Product
     class MySqlCommand : Command
     {
-        public override void Execute(string query) => Console.WriteLine("MySqlCommand sorgusu çalıştırıldı.");
+        public override void Execute(string query) => Console.WriteLine("MsSqlCommand query executed.");
     }
 
     //Abstract Factory

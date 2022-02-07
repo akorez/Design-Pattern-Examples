@@ -3,24 +3,14 @@ using System.Collections.Generic;
 
 namespace ObserverDesignPattern
 {
-    /*
-     --Allows a group of objects to be notified when some state changes --
 
-     Observer Design Pattern ==> Elimizdeki mevcut nesnenin durumunda herhangi bir değişiklik olduğunda, bu 
-    değişiklerden diğer nesneleri haberdar eden bir tasarımdan bahsediyoruz. Dahada net bir şekilde bahsetmek 
-    gerekirse, elimizdeki “x” nesnesinin “y” özelliğinde bir güncellenme, değişiklik yahut belirli bir şartın 
-    gerçekleşmesi gibi bir durum cereyan ettiğinde bu “x” nesnesini -izleyen- -gözleyen- diğer “z”, “w”, “k” 
-    vs. nesnelerine bu yeni durumu bildiren sisteme denir.
 
-    Klasik örneği finans işlemleridir (hissenin değeri değiştiğinde borsacıların haberdar olması)
-     */
-
-    //Subject: Takip etmek istediğimiz hisse stoku
+    //Subject: Stock stock we want to track
     class Stock
     {
 
         public string Name { get; set; }
-        //Değişikliklerden haberdar olacak kitle
+        //Audience to be aware of changes
         private List<IFinancer> _financiers;
 
         private decimal _lotValue;
@@ -61,7 +51,7 @@ namespace ObserverDesignPattern
 
     }
 
-    //Observer : Gözlemcilerimiz
+    //Observers
     interface IFinancer
     {
         void Update(Stock stock);
@@ -84,13 +74,13 @@ namespace ObserverDesignPattern
         {
             Stock azonDemir = new Stock { Name = "Azon Demir Kimya", LotValue = 12.3M };
 
-            Financier xYatirim = new Financier { Name = "X Yatırım Şirketi" };
+            Financier xYatirim = new Financier { Name = "X Investment Company" };
 
-            azonDemir.Subscribe(xYatirim); //xYatirimi güncelleme alabilmesi için abone ettik.
+            azonDemir.Subscribe(xYatirim); //We have subscribed xYatirim so that it can receive updates.
 
-            Financier zBank = new Financier { Name = "z bank Şirketi" };
+            Financier zBank = new Financier { Name = "z bank Company" };
 
-            azonDemir.Subscribe(zBank); //zBank güncelleme alabilmesi için abone ettik.
+            azonDemir.Subscribe(zBank); //We subscribed to zBank so that it can receive updates.
 
             Console.WriteLine("{0} hissesinin güncel lot degeri {1}", azonDemir.Name, azonDemir.LotValue.ToString("C2"));
 

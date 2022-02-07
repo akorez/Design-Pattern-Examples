@@ -2,24 +2,6 @@
 
 namespace IteratorDesignPattern
 {
-    /*
-    -- Provides a way to traverse a collection of objects without exposing the collection’s implementation -- 
-
-    Iterator Design Pattern
-
-    Aggregate ==> Veri kümesi içerisinde dolaşmak için bir IIterator interface’i tipinden Iterator 
-    yaratılmasını zorunlu tutan arayüzdür.
-    
-    Iterator ==> Veri kümesi içerisinde dolaşmanın tüm şart ve imzasını bu arayüz belirlemektedir. 
-    Yani bir enumerator(sayıcı) görevi üstlenmektedir. Uzun lafın kısası, elimizdeki veri kümesi üzerinde 
-    döngü esnasında verileri/nesneleri elde edebilmemiz için gerekli işlemleri/kontrolleri/şartları/hususları tanımlar.
-
-    ConcreteAggregate ==> Veri kümesini barındıran nesnedir. Aggregate arayüzünü uygulayarak Iterator nesnesini oluşturur.
-
-    ConcreteIterator ==> Iterator arayüzünü uygulayan ve içerisinde iterasyon metot ve özelliklerini barındıran,
-    yukarıda da bahsettiğimiz enumerator görevini üstlenen sınıftır.
-     
-     */
 
     interface IAggregate
     {
@@ -61,10 +43,6 @@ namespace IteratorDesignPattern
             {
                 int dayCount = (int)currentDate.DayOfWeek;
                 currentDate = currentDate.AddDays(6 - dayCount);
-                /*6'dan ilgili günün haftalık sayısını çıkarırsak eğer 
-                 Cumartesi gününe kalan günü hesaplamış oluruz.
-                 Haliyle bu hesabı ilgili tarihe eklersek eğer
-                 o haftanın hafta sonuna ulaşmış oluruz.*/
             }
             return currentDate < aggregate.endDate;
         }
