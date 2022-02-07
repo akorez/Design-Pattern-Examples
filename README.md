@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/34706028/152839381-dee3534e-7167-49ec-bc1c-189c69c26332.png)
 # Design-Pattern-Examples
 This repository contains simple and understandable examples of frequently used software design patterns prepared using C# language.
 These Design Patterns are :
